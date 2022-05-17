@@ -74,10 +74,12 @@ export default function NewAccount({ navigation }) {
         <View style={styles.container}>
           <View style={styles.container1}>
             <TextInput placeholder='First Name'
+              autoCorrect={false}
               style={styles.textinp1}
               onChangeText={(val) => setfName(val)}>
             </TextInput>
             <TextInput placeholder='Last Name'
+              autoCorrect={false}
               style={styles.textinp1}
               onChangeText={(val) => setlname(val)}></TextInput>
           </View>
@@ -86,6 +88,7 @@ export default function NewAccount({ navigation }) {
           <View>
             <TextInput placeholder='Email'
               autoCapitalize='none'
+              autoCorrect={false}
               style={styles.textinp2}
               keyboardType='email-address'
               onChangeText={(val) => setemailReg(val)}></TextInput>

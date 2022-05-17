@@ -29,7 +29,7 @@ export default function Index({ navigation }) {
         Alert.alert('Error!', 'Email or Password does not match!\n\nDo you want to create a new account?');
       }
     }).catch(error => {
-      console.log('>>>>>>h', error);
+      // console.log('>>>>>>h', error);
       Alert.alert('Error!', 'Email or Password does not match!\n\nDo you want to create a new account?',[{
         text:'Create',
         onPress: ()=>{
